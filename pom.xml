@@ -10,6 +10,11 @@
 
 	<name>github-sdk-java-dis</name>
 	<description>Github Data Ingestion Service Java SDK</description>
+	<scm>
+		<connection>scm:git:https://github.com/dispublish/sdk-java-dis.git</connection>
+		<developerConnection>scm:git:git@github.com:dispublish/sdk-java-dis.git</developerConnection>
+		<url>https://github.com/dispublish/sdk-java-dis</url>
+	</scm>
 	<licenses>
 		<license>
 			<name>Apache 2.0 License</name>
@@ -17,6 +22,13 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+	<developers>
+		<developer>
+			<name>dispublish</name>
+			<organization>Data Ingestion Service</organization>
+			<organizationUrl>https://github.com/dispublish/sdk-java-dis</organizationUrl>
+		</developer>
+	</developers>
 
 	<!-- Modules -->
 	<modules>
@@ -31,11 +43,11 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>oss-snapshot</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 		<repository>
 			<id>oss-release</id>
-			<url>https://oss.sonatype.org/</url>
+			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
 
@@ -132,8 +144,8 @@
 						<version>1.6.7</version>
 						<extensions>true</extensions>
 						<configuration>
-							<serverId>oss-release</serverId>
-							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+							<serverId>oss-snapshot</serverId>
+							<nexusUrl>https://s01.oss.sonatype.org/content/repositories/snapshots</nexusUrl>
 							<autoReleaseAfterClose>true</autoReleaseAfterClose>
 						</configuration>
 					</plugin>
