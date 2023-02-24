@@ -16,7 +16,7 @@ The recommended way to use the DIS SDK for Java in your project is to consume it
 
 #### Specify the SDK Maven dependency
     <dependency>
-        <groupId>io.github.dis</groupId>
+        <groupId>io.github.dispublish</groupId>
         <artifactId>github-sdk-java-dis</artifactId>
         <version>1.3.15</version>
         <scope>compile</scope>
